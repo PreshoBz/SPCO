@@ -20,3 +20,13 @@ func (t Triangle) Perimeter() float64 {
 	side := math.Sqrt(math.Pow(t.base), 2) + math.Pow(t.heigth, 2)
 	return t.base + t.height + side
 }
+
+func main() {
+ 
+//Creatng a variable of type 'triangle'	
+  tri1 := Triangle {
+	base = 5.0,
+	heigth = 4.0
+  }
+
+}
