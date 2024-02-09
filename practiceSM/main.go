@@ -27,6 +27,11 @@ type Circle struct {
 	radius float64
 }
 
+// Creating method called area
+func (c Circle) Area() float64 {
+	return math.Pi * c.radius * c.radius
+}
+
 func main() {
 
 	//Creatng a variable of type 'triangle'
