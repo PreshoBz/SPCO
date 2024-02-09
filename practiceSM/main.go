@@ -22,6 +22,11 @@ func (t Triangle) Perimeter() float64 {
 	return t.base + t.heigth + side
 }
 
+// Creating a Struct called Circle
+type Circle struct {
+	radius float64
+}
+
 func main() {
 
 	//Creatng a variable of type 'triangle'
