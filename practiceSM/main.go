@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"math"
 )
 
@@ -17,16 +18,19 @@ func (t Triangle) Area() float64 {
 
 // Creating method called perimeter
 func (t Triangle) Perimeter() float64 {
-	side := math.Sqrt(math.Pow(t.base), 2) + math.Pow(t.heigth, 2)
-	return t.base + t.height + side
+	side := math.Sqrt(math.Pow(t.base, 2) + math.Pow(t.heigth, 2))
+	return t.base + t.heigth + side
 }
 
 func main() {
- 
-//Creatng a variable of type 'triangle'	
-  tri1 := Triangle {
-	base = 5.0,
-	heigth = 4.0
-  }
 
+	//Creatng a variable of type 'triangle'
+	tri1 := Triangle{
+		base:   5.0,
+		heigth: 4.0,
+	}
+
+	//Calling the methods on triangle
+	fmt.Println(tri1.Area())
+	fmt.Println(tri1.Perimeter())
 }
