@@ -32,6 +32,11 @@ func (c Circle) Area() float64 {
 	return math.Pi * c.radius * c.radius
 }
 
+// Creating method called perimeter
+func (c Circle) Perimeter() float64 {
+	return 2 * math.Pi * c.radius
+}
+
 func main() {
 
 	//Creatng a variable of type 'triangle'
