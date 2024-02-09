@@ -1,5 +1,9 @@
 package main
 
+import (
+	"math"
+)
+
 // Creating a Struct called Triangle
 type Triangle struct {
 	base   float64
@@ -9,4 +13,10 @@ type Triangle struct {
 // Creating method called area
 func (t Triangle) Area() float64 {
 	return 1.5 * (t.base * t.heigth)
+}
+
+// Creating method called perimeter
+func (t Triangle) Perimeter() float64 {
+	side := math.Sqrt(math.Pow(t.base), 2) + math.Pow(t.heigth, 2)
+	return t.base + t.height + side
 }
