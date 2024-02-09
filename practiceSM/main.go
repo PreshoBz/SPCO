@@ -37,6 +37,13 @@ func (c Circle) Perimeter() float64 {
 	return 2 * math.Pi * c.radius
 }
 
+// Creating a function called square
+func square(side float64) (float64, float64) {
+	area := side * side
+	perimeter := 4 * side
+	return area, perimeter
+}
+
 func main() {
 
 	//Creatng a variable of type 'triangle'
