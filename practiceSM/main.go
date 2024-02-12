@@ -18,8 +18,7 @@ func (t Triangle) Area() float64 {
 
 // Creating method called perimeter
 func (t Triangle) Perimeter() float64 {
-	side := math.Sqrt(math.Pow(t.base, 2) + math.Pow(t.heigth, 2))
-	return t.base + t.heigth + side
+	return 2*t.base + t.heigth
 }
 
 // Creating a Struct called Circle
